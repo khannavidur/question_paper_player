@@ -1,0 +1,34 @@
+html
+	body
+
+		-for(i=0;i<data.length;i++){
+			p
+				|Q
+				= i+1
+			
+				=' ' + data[i].qtext
+			
+			input(type="radio", name="i", value="1")
+			span.label Option A
+			input(type="radio", name="i", value="2")
+			span.label Option B
+			input(type="radio", name="i", value="3")
+			span.label Option C
+			input(type="radio", name="i", value="4")
+			span.label Option D
+		-}
+		script(type="text/javascript").
+			
+				function something(){
+					document.getElementById('print').style.visibility = 'hidden'
+					window.print();
+				};
+
+			
+		input(type="button", name="printButton", value="Print", id="print", onclick="something();")
+		
+				
+					
+					
+
+		

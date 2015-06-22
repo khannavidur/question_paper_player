@@ -1,0 +1,8 @@
+html
+	body
+		form(method="post" action='/question_paper')
+			div.input
+				span.label Duration
+				input(type="number", required="true", name="duration", min="20", max="60")
+			div.actions
+				input(type="submit", style="align:right;", value="generate")
